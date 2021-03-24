@@ -1,0 +1,16 @@
+nav button {
+  margin-right: 1em;
+  background-color: deeppink;
+  border: 2px solid #333;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 0.25em 0.5em;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+nav button:active,
+nav button:hover,
+nav button:focus {
+  background-color: turquoise;
+}
