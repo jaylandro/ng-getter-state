@@ -9,8 +9,7 @@ import { CounterService } from "../services/counter.service";
 export class CounterComponent {
   constructor(private counter: CounterService) {}
 
-  get currentCount() {
-    console.log("rann");
+  get currentCount(): number {
     return this.counter.currentCount.value;
   }
 
