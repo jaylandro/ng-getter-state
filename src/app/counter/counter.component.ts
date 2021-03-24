@@ -1,16 +1,16 @@
-import { Component} from '@angular/core';
-import { CounterService } from '../services/counter.service';
+import { Component } from "@angular/core";
+import { CounterService } from "../services/counter.service";
 
 @Component({
-  selector: 'app-counter',
-  templateUrl: './counter.component.html',
-  styleUrls: ['./counter.component.css']
+  selector: "app-counter",
+  templateUrl: "./counter.component.html",
+  styleUrls: ["./counter.component.css"]
 })
 export class CounterComponent {
-
-  constructor(private counter: CounterService) { }
+  constructor(private counter: CounterService) {}
 
   get currentCount() {
+    console.log("rann");
     return this.counter.currentCount.value;
   }
 
@@ -25,5 +25,4 @@ export class CounterComponent {
   reset(): void {
     this.counter.resetCount();
   }
-
 }
